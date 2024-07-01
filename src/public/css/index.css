@@ -1,0 +1,113 @@
+
+.todo__alert--success{
+    padding: 15px 30px;
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+.todo__alert--danger {
+    padding: 15px 30px;
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+.todo__content{
+    max-width: 1230px;
+    margin: 30px auto 0;
+    padding: 30px 15px;
+}
+.create-form{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+.create-form__item{
+    width: 70%;
+}
+
+.create-form__item-input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    height: 40px;
+    border-radius: 3px;
+}
+.create-form__button{
+    width: 20%;
+}
+.create-form__button-submit{
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.todo-table{
+    width: 70%;
+    margin: 30px auto 0;
+}
+.todo-table__inner{
+    width: 100%;
+}
+.todo-table__row{
+    border-bottom: 1px solid #ddd;
+}
+.todo-table__header{
+    width: 20%;
+    font-size: 24px;
+    text-align: left;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.todo-table__item:first-of-type{
+    width: 90%;
+    padding: 12px;
+}
+.update-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.update-form__item{
+    width: 80%;
+    line-height: 50%;
+}
+.update-form__item-input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.update-form__button{
+    width: 50px;
+}
+.update-form__button-submit{
+    width: 100%;
+    border: none;
+    background-color: #0000ff;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.delete-form__button{
+    width: 50px;
+}
+.delete-form__button-submit{
+    width: 100%;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
