@@ -44,9 +44,11 @@
             <tr class="todo-table__row">
                 <td class="todo-table__item">
                     <form action="/todos/update" method="post" class="update-form">
+                    @method('PATCH')
                     @csrf
                         <div class="update-form__item">
                             <input type="text" name="content" value="{{$todo['content']}}" class="update-form__item-input">
+                            <input type="hidden" name="id" value="{{$todo['id']}}">
                         </div>
                         <div class="update-form__button">
                             <input type="submit" value="更新" class="update-form__button-submit">
