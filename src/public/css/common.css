@@ -8,9 +8,21 @@
     padding: 30px 15px;
 }
 
+.header-utilities{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header__logo{
     font-size: 32px;
     font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.header-nab__link{
     color: #fff;
     text-decoration: none;
 }

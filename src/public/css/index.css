@@ -14,31 +14,49 @@
 
 .todo__content{
     max-width: 1230px;
-    margin: 30px auto 0;
+    margin: 0 auto;
     padding: 30px 15px;
 }
-.create-form{
+
+.section__title{
+    width: 70%;
     margin: 0 auto;
+}
+
+.create-form, .search-form{
+    margin: 0 auto 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 70%;
 }
-.create-form__item{
+.create-form__item, .search-form__item{
     width: 70%;
+    display: flex;
 }
 
-.create-form__item-input{
-    width: 100%;
+.create-form__item-input, .search-form__item-input{
+    width: 70%;
     padding: 10px;
     border: 1px solid #ddd;
     height: 40px;
     border-radius: 3px;
+    margin-right: 10px;
 }
-.create-form__button{
+
+.create-form__item-select, .search-form__item-select{
+    width: 30%;
+    border: 1px solid #ddd;
+    height: 40px;
+    border-radius: 3px;
+    appearance: none;
+    padding: 10px;
+}
+
+.create-form__button, .search-form__button{
     width: 20%;
 }
-.create-form__button-submit{
+.create-form__button-submit, .search-form__button-submit{
     width: 100%;
     height: 40px;
     background-color: #000;
@@ -51,7 +69,7 @@
 
 .todo-table{
     width: 70%;
-    margin: 30px auto 0;
+    margin: 60px auto 0;
 }
 .todo-table__inner{
     width: 100%;
