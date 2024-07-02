@@ -56,10 +56,12 @@
                     </form>
                 </td>
                 <td class="todo-table__item">
-                    <form action="" method="post" class="delete-form">
+                    <form action="/todos/delete" method="post" class="delete-form">
+                    @method('DELETE')
                     @csrf
                         <div class="delete-form__button">
                             <input type="submit" value="削除" class="delete-form__button-submit">
+                            <input type="hidden" name="id" value="{{$todo['id']}}">
                         </div>
                     </form>
                 </td>
