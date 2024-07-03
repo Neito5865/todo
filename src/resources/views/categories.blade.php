@@ -23,10 +23,10 @@
 </div>
 
 <div class="category__content">
-    <form action="" class="create-form" method="post">
+    <form action="/categories" class="create-form" method="post">
     @csrf
         <div class="create-form__item">
-            <input class="create-form__item-input" type="text" name="category" value="">
+            <input class="create-form__item-input" type="text" name="name" value="{{old('name')}}">
         </div>
         <div class="create-form__button">
             <input type="submit" value="作成" class="create-form__button-submit">
@@ -43,12 +43,12 @@
             @foreach ($categories as $category)
             <tr class="category-table__row">
                 <td class="category-table__item">
-                    <form action="" method="post" class="update-form">
-                    {{-- @method('PATCH') --}}
+                    <form action="/categories/update" method="post" class="update-form">
+                    @method('PATCH')
                     @csrf
                         <div class="update-form__item">
-                            <input type="text" name="content" value="カテゴリー1" class="update-form__item-input">
-                            <input type="hidden" name="id" value="">
+                            <input type="text" name="name" value="{{$category['name']}}" class="update-form__item-input">
+                            <input type="hidden" name="id" value="{{$category['id']}}">
                         </div>
                         <div class="update-form__button">
                             <input type="submit" value="更新" class="update-form__button-submit">
@@ -56,12 +56,12 @@
                     </form>
                 </td>
                 <td class="category-table__item">
-                    <form action="" method="post" class="delete-form">
-                    {{-- @method('DELETE') --}}
+                    <form action="/categories/delete" method="post" class="delete-form">
+                    @method('DELETE')
                     @csrf
                         <div class="delete-form__button">
                             <input type="submit" value="削除" class="delete-form__button-submit">
-                            <input type="hidden" name="id" value="">
+                            <input type="hidden" name="id" value="{{$category['id']}}">
                         </div>
                     </form>
                 </td>
